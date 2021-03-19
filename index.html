@@ -12,20 +12,74 @@ body {
 	height: 29px;
 	width: 824px;
 }
+#div-1 marquee {
+	line-height: 29px;
+}
+.f3 {
+	font-family: "標楷體";
+	font-size: 16px;
+	color: #000;
+}
 </style>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
 </head>
 
-<body>
+<body onload="MM_preloadImages('images/park0302a.jpg','images/park0303a.jpg','images/park0304a.jpg','images/park0305a.jpg')">
 <table width="1024" border="1" align="center" cellpadding="0" cellspacing="0">
   <tr>
     <td height="65" colspan="2" bgcolor="#0000FF"><div align="center"><a href="index.html" target="_top"><img src="images/a0.gif" width="65" height="65" /></a></div></td>
   </tr>
   <tr>
-    <td width="200" height="683">&nbsp;</td>
-    <td height="683" align="center" valign="top"><div id="div-1"> id "div-1" 的內容放在這裡</div><iframe src="others/main.html" name="imain" width="824" height="654"></iframe></td>
+    <td width="200" height="683" align="center" valign="top" bgcolor="#00FFFF"><table width="100%" border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td align="center"><a href="park/yangmingshan.html" target="imain" onmouseover="MM_swapImage('Image2','','images/park0302a.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/park0302.jpg" alt="陽明山國家公園" name="Image2" width="120" height="40" id="Image2" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><a href="park/sheipa.html" target="imain" onmouseover="MM_swapImage('Image3','','images/park0303a.jpg',1)" onmouseout="MM_swapImgRestore()"><img src="images/park0303.jpg" alt="雪霸國家公園" name="Image3" width="120" height="40" id="Image3" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image4','','images/park0304a.jpg',1)"><img src="images/park0304.jpg" alt="太魯閣國家公園" name="Image4" width="120" height="40" id="Image4" border="0" /></a></td>
+      </tr>
+      <tr>
+        <td align="center">&nbsp;</td>
+      </tr>
+      <tr>
+        <td align="center"><a href="#" onmouseout="MM_swapImgRestore()" onmouseover="MM_swapImage('Image5','','images/park0305a.jpg',1)"><img src="images/park0305.jpg" alt="玉山國家公園" name="Image5" width="120" height="40" id="Image5" border="0" /></a></td>
+      </tr>
+    </table>
+    <p><a href="others/park.mp3">檔案下載</a></p></td>
+    <td height="683" align="center" valign="top"><div id="div-1"><marquee>歡迎進入國家公園介紹網，本網站有  詳細的國家公園介紹哦！</marquee></div><iframe src="others/main.html" name="imain" width="824" height="654"></iframe></td>
   </tr>
   <tr>
-    <td height="20" colspan="2">&nbsp;</td>
+    <td height="20" colspan="2" align="center" valign="middle" class="f3">網頁設計及維護：31洪緯承、最近更新日期： 2021/03/19 </td>
   </tr>
 </table>
 </body>
